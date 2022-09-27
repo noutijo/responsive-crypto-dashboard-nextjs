@@ -6,7 +6,7 @@ export default function NavBar() {
         <div className="bg-colorLight dark:bg-colorLight_DM py-2 px-[1.6rem] rounded-md w-[32vw] items-center gap-3 text-colorGrayLight sm:hidden lg:flex">
           <i className={`bi bi-search text-sm flex items-center`}></i>
           <input
-            className="text-colorDark dark:text-colorDark_DM bg-transparent w-[100%] placeholder:text-colorGrayDark dark:placeholder:text-colorGrayDark_DM"
+            className="text-colorDark outline-none dark:text-colorDark_DM bg-transparent w-[100%] placeholder:text-colorGrayDark dark:placeholder:text-colorGrayDark_DM"
             type="search"
             placeholder="Search"
           />
