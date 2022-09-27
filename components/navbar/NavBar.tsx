@@ -4,10 +4,10 @@ export default function NavBar() {
   const [currentTheme, setCurrentTheme] = useState<string>("");
 
   useEffect(() => {
-    if (localStorage.theme && localStorage.theme === "dark") {
-      setCurrentTheme("dark");
-    } else {
+    if (localStorage.theme && localStorage.theme === "light") {
       setCurrentTheme("light");
+    } else {
+      setCurrentTheme("dark");
     }
   }, []);
 
