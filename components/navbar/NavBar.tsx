@@ -1,4 +1,27 @@
+import { useEffect, useState } from "react";
+
 export default function NavBar() {
+  const [currentTheme, setCurrentTheme] = useState<string>("");
+
+  useEffect(() => {
+    if (localStorage.theme && localStorage.theme === "dark") {
+      setCurrentTheme("dark");
+    } else {
+      setCurrentTheme("light");
+    }
+  }, []);
+
+  //toggle theme
+  const setTheme = (theme: string) => {
+    document.documentElement.classList.add(`${theme}`);
+    document.documentElement.classList.remove(
+      `${theme === "dark" ? "light" : "dark"}`
+    );
+
+    setCurrentTheme(`${theme}`);
+    localStorage.theme = `${theme}`;
+  };
+
   return (
     <nav className="w-screen bg-colorWhite dark:bg-colorWhite_DM py-[0.5rem]">
       <div className="flex justify-between items-center relative w-[96%] m-auto">
@@ -14,16 +37,26 @@ export default function NavBar() {
         <div className="flex items-center justify-between gap-8">
           <div className="flex bg-colorLight dark:bg-colorLight_DM w-[5rem] h-[2rem] rounded-md cursor-pointer">
             <i
-              className={`bi bi-brightness-high-fill text-sm w-1/2 h-full flex items-center justify-center ${"active-theme"}`}></i>
+              className={`bi bi-brightness-high-fill text-sm w-1/2 h-full flex items-center justify-center ${
+                currentTheme === "light" ? "active-theme" : ""
+              }`}
+              onClick={() => {
+                setTheme("light");
+              }}></i>
             <i
-              className={`bi bi-moon-fill text-sm w-1/2 h-full flex items-center justify-center`}></i>
+              className={`bi bi-moon-fill text-sm w-1/2 h-full flex items-center justify-center ${
+                currentTheme === "dark" ? "active-theme" : ""
+              }`}
+              onClick={() => {
+                setTheme("dark");
+              }}></i>
           </div>
           <div className="flex items-center gap-2">
             <div className="block w-[2rem] h-[2rem] overflow-hidden rounded-[50%]">
               <img src="images/me.jpeg" alt="" />
             </div>
             <h5>Oreol Noumodong</h5>
-            <div className="expand-menu">
+            <div className="">
               <i
                 className={`bi bi-chevron-down text-sm w-1/2 h-full flex items-center justify-center`}></i>
             </div>
