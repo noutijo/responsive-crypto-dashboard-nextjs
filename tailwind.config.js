@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Karla", ...defaultTheme.fontFamily.sans],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         colorWhite: "#ffffff",
@@ -25,7 +25,7 @@ module.exports = {
         colorGrayLight: "#86848c",
         colorGrayDark: "#56555e",
         colorDark: "#27282f",
-        colorPrimary: "#134e4a",
+        colorPrimary: "#fa7986",
         colorSuccess: "rgb(34, 202, 75)",
         colorDanger: "rgb(255, 67, 54)",
         colorWarning: "rgb(234, 181, 7)",
