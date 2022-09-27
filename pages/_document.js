@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `try {if ((localStorage.theme) && (localStorage.theme === 'light')) {document.documentElement.classList.add('light')} else {document.documentElement.classList.add('dark')}} catch (__) {}`,
+            __html: `try { if ((localStorage.theme) && (localStorage.theme === 'light')) {document.documentElement.classList.add('light')} else {document.documentElement.classList.add('dark')}} catch (__) {}`,
           }}></script>
         <meta charSet="utf-8" />
         <link rel="icon" type="image/png" href="/logo.png" />
