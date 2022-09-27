@@ -35,7 +35,7 @@ export default function NavBar() {
           />
         </div>
         <div className="flex items-center justify-between gap-8">
-          <div className="flex bg-colorLight dark:bg-colorLight_DM w-[5rem] h-[2rem] rounded-md cursor-pointer">
+          <div className="flex bg-colorLight dark:bg-colorLight_DM w-[5rem] h-[2rem] rounded-full cursor-pointer">
             <i
               className={`bi bi-brightness-high-fill text-sm w-1/2 h-full flex items-center justify-center ${
                 currentTheme === "light" ? "active-theme" : ""

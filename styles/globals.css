@@ -110,7 +110,7 @@
     }
 
     .active-theme {
-        @apply bg-colorDark dark:bg-colorDark_DM text-colorWhite dark:text-colorWhite_DM rounded-md
+        @apply bg-colorDark dark:bg-colorDark_DM text-colorWhite dark:text-colorWhite_DM rounded-full
     }
 
     .activeToggle {
