@@ -9,7 +9,7 @@ export default function ErrorPage() {
         <title>404 -Page Not Found</title>
       </Head>
 
-      <div className="h-[93vh] w-full flex items-center justify-center bg-colorDark text-colorWhite">
+      <div className="h-[98vh] w-full flex items-center justify-center bg-colorDark text-colorWhite">
         <div>
           <p className="text-3xl text-center">404</p>
           <p className="mt-2 text-sm text-center">
