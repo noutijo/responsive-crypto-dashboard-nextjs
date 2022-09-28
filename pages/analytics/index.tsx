@@ -1,12 +1,12 @@
 import PrincipalLayout from "@components/layouts/PrincipalLayout";
 import PageTemplate from "@components/PageTemplate";
 
-export default function Home() {
+export default function Analytics() {
   return (
     <>
-      <PageTemplate title={"Home"} />
+      <PageTemplate title={"Analytics"} />
     </>
   );
 }
 
-Home.Layout = PrincipalLayout;
+Analytics.Layout = PrincipalLayout;

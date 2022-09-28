@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function NavBar() {
@@ -26,7 +27,16 @@ export default function NavBar() {
   return (
     <nav className="w-screen bg-colorWhite dark:bg-colorWhite_DM py-[0.5rem]">
       <div className="flex justify-between items-center relative w-[96%] m-auto">
-        <Image width={40} height={25} src="/images/logo.png" alt="logo" />
+        <Link href="/">
+          <Image
+            className="cursor-pointer"
+            width={40}
+            height={25}
+            src="/images/logo.png"
+            alt="logo"
+          />
+        </Link>
+
         <div className="bg-colorLight dark:bg-colorLight_DM py-2 px-[1.6rem] rounded-md w-[32vw] items-center gap-3 text-colorGrayLight sm:hidden lg:flex">
           <i className={`bi bi-search text-sm flex items-center`}></i>
           <input
