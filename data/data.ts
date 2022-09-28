@@ -124,7 +124,7 @@ export const transactionstData: transactionType[] = [
         card_icon: "master-card.png",
         card_bg: "bg-colorDark",
         last_card_digit: 2383,
-        card_type:"Credit Card",
+        card_type:"Master Card",
         money: 24,
     },
     {
@@ -160,7 +160,7 @@ export const transactionstData: transactionType[] = [
         card_icon: "master-card.png",
         card_bg: "bg-colorDark",
         last_card_digit: 2383,
-        card_type:"Credit Card",
+        card_type:"Master Card",
         money: 24,
     },
 
