@@ -1,9 +1,11 @@
+import { useDrawer } from "@hooks/AsideBarHook";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function NavBar() {
   const [currentTheme, setCurrentTheme] = useState<string>("");
+  const drawer = useDrawer();
 
   useEffect(() => {
     if (localStorage.theme && localStorage.theme === "light") {
@@ -24,8 +26,15 @@ export default function NavBar() {
     localStorage.theme = `${theme}`;
   };
 
+  //handle displaying drawer
+  const handleDisplayMenu = () => {
+    drawer.setMenuStatus((state) => {
+      return !state;
+    });
+  };
+
   return (
-    <nav className="w-screen bg-colorWhite dark:bg-colorWhite_DM py-[0.5rem] sticky top-0 z-[100]">
+    <nav className="w-screen bg-colorWhite dark:bg-colorWhite_DM py-[0.5rem] sticky top-0 z-[3]">
       <div className="flex justify-between items-center  w-[96%] m-auto">
         <Link href="/">
           <Image
@@ -77,7 +86,7 @@ export default function NavBar() {
                 className={`bi bi-chevron-down text-sm w-1/2 h-full flex items-center justify-center`}></i>
             </div>
           </div>
-          <button className="sm:block lg:hidden">
+          <button className="lg:hidden" onClick={handleDisplayMenu}>
             <i
               className={`bi bi-list w-1/2 h-full flex items-center justify-center text-lg`}></i>
           </button>

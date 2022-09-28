@@ -1,11 +1,23 @@
 import { menuItemsData } from "@data/data";
+import { useDrawer } from "@hooks/AsideBarHook";
 import AsideBarItem from "./AsideItem";
 
 export default function Aside() {
+  const drawer = useDrawer();
+
+  //handle displaying drawer
+  const handleDisplayMenu = () => {
+    drawer.setMenuStatus((state) => {
+      return !state;
+    });
+  };
   return (
     <>
-      <aside className="flex flex-col justify-between h-[88vh] pb-6">
-        <button className="hidden">
+      <aside
+        className={`lg:flex bg-colorLight dark:bg-colorLight_DM flex-col justify-between lg:left-[0%] left-[-100%] lg:z-[1] lg:relative lg:h-[inherit] lg:w-[inherit] pb-6 z-[5] w-[22rem] h-screen fixed top-0 animate-showmenu md:animate-none ${
+          drawer.isopen ? "block" : "hidden"
+        } overflow-y-auto`}>
+        <button className="lg:hidden w-[3rem] h-[3rem] absolute top-2 right-2 z-[6]" onClick={handleDisplayMenu}>
           <i className="bi bi-x text-3xl"> </i>
         </button>
         <div className="">
@@ -18,7 +30,7 @@ export default function Aside() {
             />
           ))}
         </div>
-        <div className="bg-colorWhite dark:bg-colorWhite_DM rounded-md text-center p-6">
+        <div className="bg-colorWhite dark:bg-colorWhite_DM rounded-md text-center p-4 m-3">
           <i className="bi bi-arrow-clockwise text-3xl"> </i>
           <h4 className="m-[1rem_0]">Updates Available</h4>
           <p>Security Updates</p>

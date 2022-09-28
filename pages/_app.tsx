@@ -7,6 +7,7 @@ import type { NextPage } from "next";
 import NavBarLayout from "@components/layouts/NavBarLayout";
 import PrincipalLayout from "@components/layouts/PrincipalLayout";
 import DefaultLayout from "@components/layouts/DefaultLayout";
+import { AsideBarPrivider } from "@hooks/AsideBarHook";
 
 //define new Layout type
 export type NextPageWithLayout = NextPage & {
@@ -22,11 +23,13 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const BodyLayout = Component.Layout || DefaultLayout;
 
   return (
-    <NavBarLayout>
-      <BodyLayout>
-        <Component {...pageProps} />
-      </BodyLayout>
-    </NavBarLayout>
+    <AsideBarPrivider>
+      <NavBarLayout>
+        <BodyLayout>
+          <Component {...pageProps} />
+        </BodyLayout>
+      </NavBarLayout>
+    </AsideBarPrivider>
   );
 }
 

@@ -149,60 +149,29 @@
 
 /* main */
 
-/* ----updates ------- */
- aside .updates {
-    background: var(--color-white);
-    border-radius: var(--border-radius-1);
-    text-align: center;
-    padding: var(--card-padding);
-}
-
- aside .updates span {
-    font-size: 2.8rem;
-}
-
- aside .updates h4 {
-    margin: 1rem 0;
-}
-
- aside .updates a {
-    display: block;
-    width: 100%;
-    background: var(--color-primary);
-    color: white;
-    border-radius: var(--border-radius-1);
-    padding: 0.8rem 0;
-    margin-top: 2rem;
-    transition: all 300ms ease;
-}
-
- aside .updates a:hover {
-    box-shadow: 0 1rem 2rem var(--color-primary-light);
-}
-
 /* ------middle -------- */
-main section.middle .header {
+section.middle .header {
     display: flex;
     align-items: center;
     gap: 1rem;
 
 }
 
-main section.middle input[type="date"] {
+section.middle input[type="date"] {
     padding: 0.5rem 2rem;
     border-radius: var(--border-radius-2);
     background: var(--color-white);
     color: var(--color-gray-dark);
 }
 
-main section.middle .cards {
+section.middle .cards {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
-main section.middle .cards .card {
+section.middle .cards .card {
     background: linear-gradient(#ff796f, #bd261b);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -215,37 +184,37 @@ main section.middle .cards .card {
     transition: all 300ms ease;
 }
 
-main section.middle .cards .card:nth-child(2) {
+section.middle .cards .card:nth-child(2) {
     background: linear-gradient(#7f8191, #27282f);
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
-main section.middle .cards .card:nth-child(3) {
+section.middle .cards .card:nth-child(3) {
     background: linear-gradient(#5d70ff, #5719c2);
     box-shadow: 0 2rem 3rem var(--color-primary-light);
 }
 
-main section.middle .cards .card:hover {
+section.middle .cards .card:hover {
     box-shadow: none;
 }
 
-main section.middle .cards .card .top {
+section.middle .cards .card .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main section.middle .cards .card .top .left {
+section.middle .cards .card .top .left {
     display: flex;
     gap: 0.5rem;
 }
 
-main section.middle .cards .card .top h2 {
+section.middle .cards .card .top h2 {
     font-weight: 200;
     font-size: 1.4rem;
 }
 
-main section.middle .cards .card .top .left img {
+section.middle .cards .card .top .left img {
     width: 2.3rem;
     height: 2.3rem;
     border: 1px solid white;
@@ -253,36 +222,36 @@ main section.middle .cards .card .top .left img {
     padding: 0.4rem;
 }
 
-main section.middle .cards .card .top img.right {
+section.middle .cards .card .top img.right {
     width: 3.5rem;
 }
 
-main section.middle .cards .card .middle {
+section.middle .cards .card .middle {
     display: flex;
     justify-content: space-between;
 }
 
-main section.middle .cards .card .middle .chip {
+section.middle .cards .card .middle .chip {
     width: 3.5rem;
 }
 
-main section.middle .cards .card .bottom {
+section.middle .cards .card .bottom {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-main section.middle .cards .card .bottom .right {
+section.middle .cards .card .bottom .right {
     display: flex;
     gap: 2rem;
 }
 
-main section.middle .cards .card h1 {
+section.middle .cards .card h1 {
     font-size: 1.6rem;
 }
 
 /* ------ report monthly ------ */
-main .monthly-report {
+.monthly-report {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -290,20 +259,20 @@ main .monthly-report {
     margin-top: 2rem;
 }
 
-main .monthly-report h1 {
+.monthly-report h1 {
     font-size: 1.8rem;
     font-weight: 700;
 }
 
 /* ------ fast payment ------- */
-main .fast-payment {
+.fast-payment {
     margin-top: 2rem;
     display: flex;
     align-self: center;
     gap: 2rem;
 }
 
-main .fast-payment .badges {
+.fast-payment .badges {
     display: flex;
     gap: 1rem;
     align-self: center;
@@ -311,13 +280,13 @@ main .fast-payment .badges {
     max-width: 100%;
 }
 
-main .fast-payment .badges .badge span {
+.fast-payment .badges .badge span {
     width: 7px;
     height: 7px;
     border-radius: 50%;
 }
 
-main .fast-payment .badges .badge {
+.fast-payment .badges .badge {
     padding: 0.5rem var(--card-padding);
     background: var(--color-white);
     border-radius: var(--border-radius-2);
@@ -327,12 +296,12 @@ main .fast-payment .badges .badge {
     transition: all 300ms ease;
 }
 
-main .fast-payment .badges .badge:hover {
+.fast-payment .badges .badge:hover {
     box-shadow: 0 0 1.5rem var(--color-primary-light);
     cursor: pointer;
 }
 
-main .fast-payment .badges .badge:first-child span {
+.fast-payment .badges .badge:first-child span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,7 +309,7 @@ main .fast-payment .badges .badge:first-child span {
     font-size: 1.5rem;
 }
 
-main .fast-payment .badges .badge div {
+.fast-payment .badges .badge div {
     display: flex;
     align-self: center;
     gap: 1rem;
@@ -348,7 +317,7 @@ main .fast-payment .badges .badge div {
 
 /* -------- chart canvas ------- */
 
-main canvas#chart {
+canvas#chart {
     background: var(--color-white);
     max-width: 100%;
     margin-top: 2rem;
@@ -464,66 +433,6 @@ main .right .recent-transactions .transaction .card-details .card {
 
 /* --------- media queries for tablets --------- */
 @media screen and (max-width:1024px) {
-    nav .search-bar {
-        display: none;
-    }
-
-    nav .profile-area {
-        gap: 2rem;
-    }
-
-    nav .profile-area button {
-        display: inline-block;
-        background: transparent;
-        color: var(--color-dark);
-    }
-
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    main aside {
-        position: fixed;
-        background-color: var(--color-white);
-        top: 0;
-        left: -100%;
-        z-index: 3;
-        width: 22rem;
-        height: 100vh;
-        box-shadow: 2rem 0 2rem var(--color-primary-light);
-        display: none;
-        animation: showSidebar 300ms ease forwards;
-    }
-
-    @keyframes showSidebar {
-        to {
-            left: 0;
-        }
-    }
-
-    main aside button#close-btn {
-        display: inline-block;
-        width: 3rem;
-        height: 3rem;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        z-index: 4;
-        background: transparent;
-        color: var(--color-dark);
-    }
-
-    button:hover {
-        cursor: pointer;
-    }
-
-    main aside .sidebar {
-        margin-top: 4rem;
-    }
-
-    main aside .updates {
-        display: none;
-    }
 
     main section.middle .cards {
         grid-template-columns: 1fr 1fr;
@@ -540,9 +449,6 @@ main .right .recent-transactions .transaction .card-details .card {
 
 /* --------- media queries for mobiles --------- */
 @media screen and (max-width:600px) {
-    nav .profile-area {
-        gap: 0.6rem;
-    }
 
     main section.middle .cards {
         grid-template-columns: 1fr;
