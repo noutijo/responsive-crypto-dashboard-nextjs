@@ -25,7 +25,7 @@ export default function AsideBarItem({ title, iconName, url }: menuItemType) {
             url.slice(1) === isSelected ? "active-menu" : "text-colorGrayLight"
           }`}>
           <i
-            className={`bi text-xl ${iconName} text-[1.2rem] ml-12 group-hover:ml-8 transition-all duration-300 ease-out`}></i>
+            className={`bi text-xl ${iconName} text-[1.2rem] ml-12 group-hover:ml-10 transition-[margin] duration-[300ms] ease-out`}></i>
           <h4 className="font-medium">{title}</h4>
         </a>
       </Link>
