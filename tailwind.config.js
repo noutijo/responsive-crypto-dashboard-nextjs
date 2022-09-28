@@ -29,11 +29,11 @@ module.exports = {
         colorSuccess: "rgb(34, 202, 75)",
         colorDanger: "rgb(255, 67, 54)",
         colorWarning: "rgb(234, 181, 7)",
-        colorPurle: "rgb(160, 99, 245)",
+        colorPurple: "rgb(160, 99, 245)",
         colorPrimaryLight: "rgba(71, 7, 234, 0.2)",
         colorSuccessLight: "rgba(34, 202, 75, 0.2)",
         colorDangerLight: "rgba(255, 67, 54, 0.2)",
-        colorPurleLight: "rgba(160, 99, 245, 0.2)",
+        colorPurpleLight: "rgba(160, 99, 245, 0.2)",
         //dark variant colors
         colorWhite_DM: "#131316",
         colorLight_DM: "#23232a",

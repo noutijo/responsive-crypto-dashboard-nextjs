@@ -1,4 +1,5 @@
 import Aside from "@components/aside";
+import RightSide from "@components/right";
 
 export default function MainLayout({
   children,
@@ -10,7 +11,7 @@ export default function MainLayout({
       <div className="grid grid-cols-[1fr] lg:grid-cols-[16rem_auto_30rem] gap-3 w-[96%] m-[1rem_auto_4rem]">
         <Aside />
         {children}
-        <div>right</div>
+        <RightSide />
       </div>
     </>
   );

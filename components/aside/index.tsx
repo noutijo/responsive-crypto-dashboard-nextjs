@@ -14,9 +14,9 @@ export default function Aside() {
   return (
     <>
       <aside
-        className={`lg:flex bg-colorLight dark:bg-colorLight_DM flex-col justify-between lg:left-[0%] left-[-100%] lg:z-[1] lg:relative lg:h-[inherit] lg:w-[inherit] pb-6 z-[5] w-[22rem] h-screen fixed top-0 animate-showmenu md:animate-none ${
+        className={`lg:flex bg-colorLight dark:bg-colorLight_DM flex-col justify-between lg:left-[0%] left-[-100%] lg:z-[1] lg:relative lg:h-[98vh] lg:w-[inherit] pb-6 z-[5] w-[22rem] h-screen fixed top-0 animate-showmenu md:animate-none ${
           drawer.isopen ? "block" : "hidden"
-        } overflow-y-auto`}>
+        } overflow-y-auto  lg:overflow-y-hidden`}>
         <button className="lg:hidden w-[3rem] h-[3rem] absolute top-2 right-2 z-[6]" onClick={handleDisplayMenu}>
           <i className="bi bi-x text-3xl"> </i>
         </button>

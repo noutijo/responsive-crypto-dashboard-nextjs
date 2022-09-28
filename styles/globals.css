@@ -48,67 +48,6 @@
 }
 
 @layer components {
-    .text-muted {
-        @apply text-colorGrayLight;
-    }
-
-    .primary {
-        @apply text-colorPrimary;
-    }
-
-    .danger {
-        @apply text-colorDanger;
-    }
-
-    .success {
-        @apply text-colorSuccess;
-    }
-
-    .purple {
-        @apply text-colorPurple;
-    }
-
-    .bg-primary {
-        @apply bg-colorPrimary;
-        box-shadow: 0 0.8rem 0.8rem var(--color-primary-light);
-    }
-
-    .bg-danger {
-        @apply bg-colorDanger;
-        box-shadow: 0 0.8rem 0.8rem var(--color-danger-light);
-    }
-
-    .bg-success {
-        @apply bg-colorSuccess;
-        box-shadow: 0 0.8rem 0.8rem var(--color-success-light);
-    }
-
-    .bg-purple {
-        @apply bg-colorPurple;
-        box-shadow: 0 0.8rem 0.8rem var(--color-purple-light);
-    }
-
-    .bg-dark {
-        background: #27282f;
-        box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
-    }
-
-    .bg-purple-light {
-        background: @apply text-colorPurleLight;
-    }
-
-    .bg-danger-light {
-        background: @apply text-colorDangerLight;
-    }
-
-    .bg-success-light {
-        background: @apply text-colorSuccessLight;
-    }
-
-    .bg-primary-light {
-        background: @apply text-colorPrimaryLight;
-    }
-
     .active-theme {
         @apply bg-colorDark dark:bg-colorDark_DM text-colorWhite dark:text-colorWhite_DM rounded-full
     }
@@ -146,8 +85,6 @@
     --border-radius-1: 1rem;
     --border-radius-2: 6px;
 }
-
-/* main */
 
 /* ------middle -------- */
 section.middle .header {
@@ -325,112 +262,6 @@ canvas#chart {
     padding: var(--card-padding);
 }
 
-/* ---------- investments ------ */
-main section.right .investments {
-    background: var(--color-white);
-    border-radius: var(--card-border-radius);
-}
-
-main section.right .investments img {
-    width: 2.4rem;
-}
-
-main section.right .investments .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--card-padding);
-    padding-bottom: 0;
-}
-
-main section.right .investments .header a {
-    display: flex;
-    color: var(--color-primary);
-    align-items: center;
-}
-
-main section.right .investments .investment {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--card-padding);
-    border-bottom: 1px solid var(--color-light);
-    transition: all 300ms ease;
-}
-
-main section.right .investments .investment:last-child {
-    border-bottom: none;
-}
-
-main section.right .investments .investment:hover {
-    background: var(--color-light);
-    cursor: pointer;
-}
-
-
-/* ------- recent transactions -------  */
-main .right .recent-transactions {
-    margin-top: 2rem;
-}
-
-main .right .recent-transactions img {
-    width: 2.2rem;
-}
-
-main .right .recent-transactions .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-main .right .recent-transactions .header a {
-    display: flex;
-    color: var(--color-primary);
-    align-items: center;
-}
-
-main .right .recent-transactions .transaction {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem var(--card-padding);
-    border-radius: var(--card-border-radius);
-    transition: all 300ms ease;
-}
-
-main .right .recent-transactions .transaction:hover {
-    background: var(--color-white);
-    cursor: pointer;
-}
-
-main .right .recent-transactions .transaction .service {
-    display: flex;
-    gap: 1rem
-}
-
-main .right .recent-transactions .transaction .service .icon {
-    padding: var(--padding-2);
-    border-radius: var(--border-radius-2);
-    display: flex;
-    align-items: center;
-}
-
-main .right .recent-transactions .transaction .card-details {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-main .right .recent-transactions .transaction .card-details .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    width: 4.6rem;
-    border-radius: var(--border-radius-2);
-}
-
 /* --------- media queries for tablets --------- */
 @media screen and (max-width:1024px) {
 
@@ -442,7 +273,7 @@ main .right .recent-transactions .transaction .card-details .card {
         margin: 3rem 0 1rem;
     }
 
-    main section.right .recent-transactions {
+    main section.right .recent-transactionss {
         margin-top: 3rem;
     }
 }
