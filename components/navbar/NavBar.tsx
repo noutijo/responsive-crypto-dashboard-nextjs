@@ -25,8 +25,8 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="w-screen bg-colorWhite dark:bg-colorWhite_DM py-[0.5rem]">
-      <div className="flex justify-between items-center relative w-[96%] m-auto">
+    <nav className="w-screen bg-colorWhite dark:bg-colorWhite_DM py-[0.5rem] sticky top-0 z-[100]">
+      <div className="flex justify-between items-center  w-[96%] m-auto">
         <Link href="/">
           <Image
             className="cursor-pointer"
