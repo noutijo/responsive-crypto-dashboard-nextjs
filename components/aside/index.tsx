@@ -19,7 +19,7 @@ export default function Aside() {
           ))}
         </div>
         <div className="bg-colorWhite dark:bg-colorWhite_DM rounded-md text-center p-6">
-          <h1 className="">update</h1>
+          <i className="bi bi-arrow-clockwise text-3xl"> </i>
           <h4 className="m-[1rem_0]">Updates Available</h4>
           <p>Security Updates</p>
           <p>Genaral Updates</p>

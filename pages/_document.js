@@ -12,10 +12,10 @@ export default function Document() {
         <link rel="icon" type="image/png" href="/logo.png" />
         <link rel="apple-touch-icon" href="/fav.png" />
       </Head>
-      <body className="w-screen h-screen overflow-x-hidden selection:bg-colorBgLight selection:text-colorPrimary bg-colorBg dark:bg-colorBg_DM ">
+      <body className="w-screen h-screen overflow-x-hidden select-none">
         <Main />
         <NextScript />
-      </body>
+      </body> 
     </Html>
   );
 }
