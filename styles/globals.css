@@ -114,7 +114,7 @@
     }
 
     .active-menu {
-        @apply bg-colorWhite dark:bg-colorWhite_DM text-colorPrimary
+        @apply bg-colorWhite dark:bg-colorWhite_DM text-colorPrimary before:content-[''] before:w-[6px] before:h-full before:bg-colorPrimary
     }
 
 }
