@@ -1,10 +1,9 @@
 import PrincipalLayout from "@components/layouts/PrincipalLayout";
-import PageTemplate from "@components/PageTemplate";
-
+import MiddleSide from "@components/middle";
 export default function Home() {
   return (
     <>
-      <PageTemplate title={"Home"} />
+      <MiddleSide />
     </>
   );
 }

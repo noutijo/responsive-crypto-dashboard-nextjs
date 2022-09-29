@@ -86,20 +86,8 @@
     --border-radius-2: 6px;
 }
 
+
 /* ------middle -------- */
-section.middle .header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-}
-
-section.middle input[type="date"] {
-    padding: 0.5rem 2rem;
-    border-radius: var(--border-radius-2);
-    background: var(--color-white);
-    color: var(--color-gray-dark);
-}
 
 section.middle .cards {
     margin-top: 1rem;

@@ -9,17 +9,17 @@ export default function PageTemplate({ title }: { title: string }) {
         <title>{title}</title>
       </Head>
 
-      <div className="h-[98vh] w-full flex items-center justify-center bg-colorDark text-colorWhite">
+      <div className="h-[98vh] w-full flex items-center justify-center bg-colorLight dark:bg-colorLight_DM">
         <div>
           <p className="text-3xl text-center">{title}</p>
           <p className="mt-2 text-sm text-center">
             <span>Follow me on Twitter: </span>
             <a
-              className="text-colorWhite font-bold"
+              className="dark:text-colorWhite font-bold"
               href="https://twitter.com/JuniorOreol"
               target="_blank"
               rel="noopener noreferrer">
-              {" "}
+              
               @JuniorOreol
             </a>
           </p>
