@@ -1,1 +1,1 @@
-Responsive crypto dashboard
+Responsive crypto dashboard admin
