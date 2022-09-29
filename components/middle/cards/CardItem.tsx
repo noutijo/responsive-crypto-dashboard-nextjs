@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { cardType } from "@/types/types";
+import Image from "next/image"
+import { cardType } from "@/types/types"
 
 
 export default function CardItem({data}: {data:cardType}) {
@@ -7,6 +7,7 @@ export default function CardItem({data}: {data:cardType}) {
   return (
     <>
       <div className="card p-6 rounded-3xl text-colorWhite flex flex-col justify-between transition-all duration-300 ease-out h-[13rem]">
+
         <div className="flex justify-between items-center">
           <div className="flex gap-2 items-center">
             <span className="border-[1px] border-ColorWhite rounded-lg p-1 h-[2rem] w-[2rem] flex items-center justify-center">
@@ -16,10 +17,12 @@ export default function CardItem({data}: {data:cardType}) {
           </div>
           <Image width={30} height={17} src={`/images/${payment_img}`} alt={`${payment_img}`} />
         </div>
+
         <div className="flex justify-between">
           <h2 className="font-bold">${money}</h2>
           <Image width={35} height={10} src="/images/card-chip.png" alt="chip" />
         </div>
+
         <div className="flex justify-between items-end">
           <div>
             <small>Card Holder</small>
@@ -36,7 +39,8 @@ export default function CardItem({data}: {data:cardType}) {
             </div>
           </div>
         </div>
+        
       </div>
     </>
-  );
+  )
 }
