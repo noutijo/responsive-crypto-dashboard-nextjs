@@ -1,18 +1,16 @@
-import Investments from "./investments";
-import Transactions from "./transactions";
+import Investments from "./investments"
+import Transactions from "./transactions"
 
 export default function RightSide() {
   return (
     <>
-      <section className="right">
-
+      <section>
         {/* invsstments  */}
         <Investments />
 
         {/* transactions  */}
         <Transactions />
-        
       </section>
     </>
-  );
+  )
 }
