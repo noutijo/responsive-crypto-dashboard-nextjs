@@ -1,5 +1,5 @@
-import { transactionType } from "@/types/types";
-import Image from "next/image";
+import { transactionType } from "@/types/types"
+import Image from "next/image"
 
 export default function TransactionItem({ data }: { data: transactionType }) {
   const {
@@ -13,11 +13,12 @@ export default function TransactionItem({ data }: { data: transactionType }) {
     last_card_digit,
     card_type,
     money,
-  } = data;
+  } = data
 
   return (
     <>
       <div className="flex items-center justify-between p-[1.5rem_1.5rem] rounded-3xl transition-all duration-300 ease-out hover:bg-colorWhite dark:hover:bg-colorWhite_DM cursor-pointer">
+
         <div className="flex items-center gap-4">
           <div className={`flex rounded-lg items-center ${icon_bg} p-2`}>
             <i className={`bi text-xl ${icon} ${icon_color}`}></i>
@@ -27,6 +28,7 @@ export default function TransactionItem({ data }: { data: transactionType }) {
             <p className="text-colorGrayLight">{date}</p>
           </div>
         </div>
+
         <div className="flex gap-4 items-center">
           <div
             className={`flex items-center justify-center h-[2.5rem] w-[4rem] rounded-md p-2 ${card_bg}`}>
@@ -37,8 +39,9 @@ export default function TransactionItem({ data }: { data: transactionType }) {
             <small className="text-colorGrayLight">{card_type}</small>
           </div>
         </div>
+        
         <h4 className="font-bold">${money}</h4>
       </div>
     </>
-  );
+  )
 }
