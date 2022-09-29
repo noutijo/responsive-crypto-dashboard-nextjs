@@ -1,4 +1,4 @@
-import { menuItemType, investmentType, transactionType } from "@/types/types";
+import { menuItemType, investmentType, transactionType, cardType } from "@/types/types";
 
 //menu items
 export const menuItemsData: menuItemType[] = [
@@ -100,7 +100,7 @@ export const transactionstData: transactionType[] = [
         card_icon: "visa.png",
         card_bg: "bg-colorDanger",
         last_card_digit: 2383,
-        card_type:"Credit Card",
+        card_type: "Credit Card",
         money: 24,
     },
     {
@@ -112,7 +112,7 @@ export const transactionstData: transactionType[] = [
         card_icon: "visa.png",
         card_bg: "bg-colorDark",
         last_card_digit: 2383,
-        card_type:"Credit Card",
+        card_type: "Credit Card",
         money: 24,
     },
     {
@@ -124,7 +124,7 @@ export const transactionstData: transactionType[] = [
         card_icon: "master-card.png",
         card_bg: "bg-colorDark",
         last_card_digit: 2383,
-        card_type:"Master Card",
+        card_type: "Master Card",
         money: 24,
     },
     {
@@ -136,7 +136,7 @@ export const transactionstData: transactionType[] = [
         card_icon: "visa.png",
         card_bg: "bg-colorDanger",
         last_card_digit: 2383,
-        card_type:"Credit Card",
+        card_type: "Credit Card",
         money: 24,
     },
     {
@@ -148,7 +148,7 @@ export const transactionstData: transactionType[] = [
         card_icon: "visa.png",
         card_bg: "bg-colorDark",
         last_card_digit: 2383,
-        card_type:"Credit Card",
+        card_type: "Credit Card",
         money: 24,
     },
     {
@@ -160,8 +160,39 @@ export const transactionstData: transactionType[] = [
         card_icon: "master-card.png",
         card_bg: "bg-colorDark",
         last_card_digit: 2383,
-        card_type:"Master Card",
+        card_type: "Master Card",
         money: 24,
     },
 
+]
+
+// transactions data
+export const cardsData: cardType[] = [
+    {
+        title_icon: "BTC.png",
+        title: "BTC",
+        payment_img: "visa.png",
+        money: "97233",
+        holder: "Noumodong",
+        expiry: "07/100",
+        cvv: "093",
+    },
+    {
+        title_icon: "ETH.png",
+        title: "EHT",
+        payment_img: "visa.png",
+        money: "45213",
+        holder: "Nkemtakeh",
+        expiry: "07/100",
+        cvv: "003",
+    },
+    {
+        title_icon: "EURO.png",
+        title: "EUR",
+        payment_img: "master-card.png",
+        money: "20317",
+        holder: "Abena Jean",
+        expiry: "07/45",
+        cvv: "030",
+    },
 ]

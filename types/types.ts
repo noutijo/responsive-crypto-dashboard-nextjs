@@ -10,7 +10,7 @@ export type investmentType = {
     date: string,
     time: string,
     bonds: number,
-    money:number,
+    money: number,
     variant: number,
     variant_color: string,
 }
@@ -23,7 +23,17 @@ export type transactionType = {
     date: string,
     card_icon: string,
     card_bg: string,
-    last_card_digit:number,
-    card_type:string,
+    last_card_digit: number,
+    card_type: string,
     money: number,
+}
+
+export type cardType = {
+    title_icon: string,
+    title: string,
+    payment_img: string,
+    money: string,
+    holder: string,
+    expiry: string,
+    cvv: string,
 }
