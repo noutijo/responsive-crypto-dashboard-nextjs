@@ -9,7 +9,7 @@ export default function MiddleSide() {
       <section>
 
         <div className="flex items-center gap-3">
-          <h1>Overview</h1>
+          <h1 className="font-bold text-2xl">Overview</h1>
           <input className="p-[0.5rem_2rem] rounded-lg bg-colorWhite dark:bg-colorWhite_DM text-colorGrayDark outline-none" type="date" />
         </div>
 

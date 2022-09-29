@@ -6,10 +6,10 @@ export default function ReportItem({ data }: { data: reportType }) {
   return (
     <>
       <div>
-        <h3 className="font-bold">{title}</h3>
+        <h3 className="font-medium">{title}</h3>
 
         <div>
-          <h2 className="font-medium mt-1">${money}</h2>
+          <h2 className="font-bold mt-1">${money}</h2>
           <details>
             <h6 className={`${variant_color}`}>{variant}%</h6>
             <p className="text-colorGrayLight text-sm">
