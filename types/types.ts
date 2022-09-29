@@ -53,17 +53,17 @@ export type paymentType = {
 }
 
 export type chartType = {
-    type: string;
+    type: string,
     data: {
-        labels: string[];
+        labels: string[],
         datasets: {
-            label: string;
-            data: number[];
-            borderColor: string;
-            borderWidth: number;
-        }[];
-    };
+            label: string,
+            data: number[],
+            borderColor: string,
+            borderWidth: number,
+        }[],
+    },
     options: {
-        responsive: boolean;
-    };
+        responsive: boolean,
+    },
 }
