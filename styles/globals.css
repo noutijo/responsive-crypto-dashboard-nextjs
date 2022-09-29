@@ -5,10 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
-    img {
-        @apply w-[100%];
-    }
-
     h1 {
         @apply text-[2rem];
     }
@@ -63,4 +59,3 @@
         @apply bg-gradient-to-l from-[#5d70ff] to-[#5719c2] shadow-card3 hover:shadow-none;
     }
 }
-

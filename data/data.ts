@@ -1,4 +1,4 @@
-import { menuItemType, investmentType, transactionType, cardType, reportType, paymentType, chartType } from "@/types/types";
+import { menuItemType, investmentType, transactionType, cardType, reportType, paymentType, chartType } from "@/types/types"
 
 //menu items
 export const menuItemsData: menuItemType[] = [
@@ -42,7 +42,7 @@ export const menuItemsData: menuItemType[] = [
         url: "/settings",
         iconName: `bi-gear-wide`,
     },
-];
+]
 
 // investments data
 export const investmentData: investmentType[] = [
@@ -269,7 +269,6 @@ export const paymentsData: paymentType[] = [
 ]
 
 // chart data
-
 export const chartData: chartType = {
     type: "line",
     data: {

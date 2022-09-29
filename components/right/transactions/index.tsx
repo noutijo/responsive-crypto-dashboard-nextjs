@@ -1,5 +1,5 @@
-import { transactionstData } from "@data/data";
-import TransactionItem from "./TransactionItem";
+import { transactionstData } from "@data/data"
+import TransactionItem from "./TransactionItem"
 
 export default function Transactions() {
   return (
@@ -11,11 +11,11 @@ export default function Transactions() {
             More <i className="bi bi-chevron-right"></i>
           </a>
         </div>
-        {/*  transactions list */}
+        {/*  get and list all transactions */}
         {transactionstData.map((transaction, __) => {
-          return <TransactionItem key={__} data={transaction} />;
+          return <TransactionItem key={__} data={transaction} />
         })}
       </div>
     </>
-  );
+  )
 }
