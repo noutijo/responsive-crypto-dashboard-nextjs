@@ -301,7 +301,7 @@ export const chartData: chartType = {
                 31500, 41000, 88800, 26000, 46000, 32698, 5000, 3000, 18656,
                 24832, 36844,
             ],
-            borderColor: "#5b5cf1",
+            borderColor: "#6e717e",
             borderWidth: 1,
         },
         {
@@ -310,7 +310,7 @@ export const chartData: chartType = {
                 3100, 4100, 8880, 36000, 56000, 62969, 500, 300, 1866,
                 2832, 26004,
             ],
-            borderColor: "#259d3f",
+            borderColor: "#5b5cf1",
             borderWidth: 1,
         },],
     },
