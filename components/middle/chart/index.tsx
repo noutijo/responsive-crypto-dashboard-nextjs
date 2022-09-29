@@ -55,10 +55,7 @@ Chart.register(
   SubTitle
 );
 
-import { chartType } from "@/types/types";
-
 export default function GrapChart() {
-  const [chart, setChart] = useState();
 
   useEffect(() => {
     const canvas = document.getElementById("chart") as HTMLCanvasElement;
