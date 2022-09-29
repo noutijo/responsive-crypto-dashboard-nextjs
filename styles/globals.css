@@ -101,20 +101,6 @@
 
 /* ------middle -------- */
 
-/* ------ report monthly ------ */
-.monthly-report {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-
-.monthly-report h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
 /* ------ fast payment ------- */
 .fast-payment {
     margin-top: 2rem;
@@ -179,29 +165,13 @@ canvas#chart {
 /* --------- media queries for tablets --------- */
 @media screen and (max-width:1024px) {
 
-    main section.middle .cards {
-        grid-template-columns: 1fr 1fr;
-    }
-
     main canvas {
         margin: 3rem 0 1rem;
-    }
-
-    main section.right .recent-transactionss {
-        margin-top: 3rem;
     }
 }
 
 /* --------- media queries for mobiles --------- */
 @media screen and (max-width:600px) {
-
-    main section.middle .cards {
-        grid-template-columns: 1fr;
-    }
-
-    nav .profile h5, nav .profile span {
-        display: one;
-    }
 
     main section.middle .fast-payment {
         flex-direction: column;

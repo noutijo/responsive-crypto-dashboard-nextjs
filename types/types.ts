@@ -11,7 +11,7 @@ export type investmentType = {
     time: string,
     bonds: number,
     money: number,
-    variant: number,
+    variant: string,
     variant_color: string,
 }
 
@@ -36,4 +36,12 @@ export type cardType = {
     holder: string,
     expiry: string,
     cvv: string,
+}
+
+export type reportType = {
+    title: string,
+    money: number,
+    variant: string,
+    variant_color: "text-colorSuccess" | "text-colorDanger",
+    prev_money: number,
 }

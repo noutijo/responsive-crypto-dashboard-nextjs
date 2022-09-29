@@ -1,4 +1,4 @@
-import { menuItemType, investmentType, transactionType, cardType } from "@/types/types";
+import { menuItemType, investmentType, transactionType, cardType, reportType } from "@/types/types";
 
 //menu items
 export const menuItemsData: menuItemType[] = [
@@ -53,7 +53,7 @@ export const investmentData: investmentType[] = [
         time: "8:12pm",
         bonds: 1307,
         money: 11863,
-        variant: -3.23,
+        variant: "-3.23",
         variant_color: "text-colorDanger",
     },
     {
@@ -63,7 +63,7 @@ export const investmentData: investmentType[] = [
         time: "8:12pm",
         bonds: 1307,
         money: 51863,
-        variant: +13.21,
+        variant: "+13.21",
         variant_color: "text-colorSuccess",
     },
     {
@@ -73,7 +73,7 @@ export const investmentData: investmentType[] = [
         time: "8:12pm",
         bonds: 5307,
         money: 31863,
-        variant: 17.01,
+        variant: "+17.01",
         variant_color: "text-colorSuccess",
     },
     {
@@ -83,7 +83,7 @@ export const investmentData: investmentType[] = [
         time: "8:12pm",
         bonds: 622,
         money: 21863,
-        variant: -3.23,
+        variant: "-3.23",
         variant_color: "text-colorDanger",
     },
 
@@ -166,7 +166,7 @@ export const transactionstData: transactionType[] = [
 
 ]
 
-// transactions data
+// cards data
 export const cardsData: cardType[] = [
     {
         title_icon: "BTC.png",
@@ -194,5 +194,36 @@ export const cardsData: cardType[] = [
         holder: "Abena Jean",
         expiry: "07/45",
         cvv: "030",
+    },
+]
+// reports data
+export const reportsData: reportType[] = [
+    {
+    title: "Incomes",
+    money: 24033,
+    variant: "+11.7",
+    variant_color: "text-colorSuccess",
+    prev_money: 1231,
+    },
+    {
+    title: "Expenses",
+    money: 239,
+    variant: "-7.3",
+    variant_color: "text-colorDanger",
+    prev_money: 89211,
+    },
+    {
+    title: "Cashback",
+    money: 9034,
+    variant: "+4.2",
+    variant_color: "text-colorSuccess",
+    prev_money: 8732,
+    },
+    {
+    title: "Turnover",
+    money: 1292,
+    variant: "-15.8",
+    variant_color:"text-colorDanger",
+    prev_money: 22332,
     },
 ]
