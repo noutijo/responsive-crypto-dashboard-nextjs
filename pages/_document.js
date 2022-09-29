@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 export default function Document() {
   return (
@@ -16,7 +15,6 @@ export default function Document() {
       <body className="w-screen h-screen overflow-x-hidden select-none text-colorDark dark:text-colorDark_DM bg-colorLight dark:bg-colorLight_DM font-sans">
         <Main />
         <NextScript />
-    
       </body>
     </Html>
   );
