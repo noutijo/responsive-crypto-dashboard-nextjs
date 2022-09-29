@@ -2,58 +2,24 @@ import { useEffect, useState } from "react";
 import { chartData } from "@data/data";
 import {
   Chart,
-  ArcElement,
   LineElement,
-  BarElement,
   PointElement,
-  BarController,
-  BubbleController,
-  DoughnutController,
   LineController,
-  PieController,
-  PolarAreaController,
-  RadarController,
-  ScatterController,
   CategoryScale,
   LinearScale,
-  LogarithmicScale,
-  RadialLinearScale,
-  TimeScale,
-  TimeSeriesScale,
-  Decimation,
-  Filler,
   Legend,
-  Title,
   Tooltip,
-  SubTitle,
-} from "chart.js";
+} from "chart.js"
 
 Chart.register(
-  ArcElement,
   LineElement,
-  BarElement,
   PointElement,
-  BarController,
-  BubbleController,
-  DoughnutController,
   LineController,
-  PieController,
-  PolarAreaController,
-  RadarController,
-  ScatterController,
   CategoryScale,
   LinearScale,
-  LogarithmicScale,
-  RadialLinearScale,
-  TimeScale,
-  TimeSeriesScale,
-  Decimation,
-  Filler,
   Legend,
-  Title,
-  Tooltip,
-  SubTitle
-);
+  Tooltip
+)
 
 export default function GrapChart() {
 
