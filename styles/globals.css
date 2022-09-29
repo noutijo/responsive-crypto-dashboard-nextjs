@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
-
     img {
         @apply w-[100%];
     }
@@ -41,7 +40,6 @@
     small {
         @apply text-[0.77rem] font-light;
     }
-
 }
 
 @layer components {
@@ -54,7 +52,7 @@
     }
 
     div.card:nth-child(1) {
-        @apply bg-gradient-to-l from-[#ff796f] to-[#bd261b] shadow-card1 hover:shadow-none;
+        @apply bg-gradient-to-l from-[#f6a49e] to-[#fa7986] shadow-card1 hover:shadow-none;
     }
 
     div.card:nth-child(2) {
@@ -64,23 +62,5 @@
     div.card:nth-child(3) {
         @apply bg-gradient-to-l from-[#5d70ff] to-[#5719c2] shadow-card3 hover:shadow-none;
     }
-
 }
 
-/* ------middle -------- */
-
-canvas#chart {
-    background: var(--color-white);
-    max-width: 100%;
-    margin-top: 2rem;
-    border-radius: var(--card-border-radius);
-    padding: var(--card-padding);
-}
-
-/* --------- media queries for tablets --------- */
-@media screen and (max-width:1024px) {
-
-    main canvas {
-        margin: 3rem 0 1rem;
-    }
-}

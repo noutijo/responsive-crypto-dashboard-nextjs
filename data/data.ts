@@ -267,3 +267,55 @@ export const paymentsData: paymentType[] = [
     money: 426,
     },
 ]
+
+// chart data
+export const chartData={
+      type: "line",
+      data: {
+        labels: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+        ],
+        datasets: [
+          {
+            label: "BTC",
+            data: [
+              29374, 33537, 49631, 59095, 57828, 36684, 33572, 39974, 48847,
+              48116, 61004,
+            ],
+            borderColor: "#fa7986",
+            borderWidth: 1,
+          },
+          {
+            label: "ETH",
+            data: [
+              31500, 41000, 88800, 26000, 46000, 32698, 5000, 3000, 18656,
+              24832, 36844,
+            ],
+            borderColor: "#5b5cf1",
+            borderWidth: 1,
+          },
+          {
+            label: "EURO",
+            data: [
+              3100, 4100, 8880, 36000, 56000, 62969, 500, 300, 1866,
+              2832, 26004,
+            ],
+            borderColor: "#259d3f",
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+      },
+    }
