@@ -1,16 +1,20 @@
-import { menuItemType } from "@/types/types"
-import Link from "next/link"
-import { useRouter } from "next/router"
-import { useEffect, useState } from "react"
+import { menuItemType } from "@/types/types";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function AsideBarItem({ title, iconName, url }: menuItemType) {
-  const [isSelected, SetIsSelected] = useState<string>("init")
-  const router = useRouter()
+  const [isSelected, SetIsSelected] = useState<string>("init");
+  const router = useRouter();
 
   useEffect(() => {
     //get current path and add to state as selected menu item
-    SetIsSelected(router.pathname.slice(1).toString())
-  }, [router.pathname])
+    SetIsSelected(router.pathname.slice(1).toString());
+  }, [router.pathname]);
+
+  const makeMenuItemSelected = () => {
+    SetIsSelected(url.slice(1));
+  };
 
   return (
     <>
@@ -22,10 +26,9 @@ export default function AsideBarItem({ title, iconName, url }: menuItemType) {
           }`}>
           <i
             className={`bi text-xl ${iconName} text-[1.2rem] ml-12 group-hover:ml-10 transition-[margin] duration-[300ms] ease-out`}></i>
-
-          <h4 className="text-colorGrayLight">{title}</h4>
+          <h4 className="font-medium">{title}</h4>
         </a>
       </Link>
     </>
-  )
+  );
 }

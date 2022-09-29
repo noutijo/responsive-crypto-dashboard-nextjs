@@ -1,4 +1,4 @@
-import NavBar from "@components/navbar/NavBar"
+import NavBar from "@components/navbar/NavBar";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -6,5 +6,5 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <NavBar />
       {children}
     </>
-  )
+  );
 }
