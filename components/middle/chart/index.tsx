@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect } from "react"
 import { chartData } from "@data/data"
 import {
   Chart,
@@ -22,13 +22,12 @@ Chart.register(
 )
 
 export default function GrapChart() {
-const [chart, setChart] = useState();
 
 useEffect(() => {
-  const canvas = document.getElementById("chart") as HTMLCanvasElement;
-  const graph = canvas.getContext("2d") as CanvasRenderingContext2D;
+  const canvas = document.getElementById("chart") as HTMLCanvasElement
+  const graph = canvas.getContext("2d") as CanvasRenderingContext2D
   // new Chart instance
-    new Chart(graph, chartData as any);
+  new Chart(graph, chartData as any)
   })
   return (
     <>
