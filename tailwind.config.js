@@ -54,6 +54,11 @@ module.exports = {
         showmenu: "showmenu 400ms ease forwards",
         hidemenu: "hidemenu 400ms ease forwards",
       },
+      boxShadow: {
+        card1: "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+        card2: "0 2rem 3rem rgba(0, 0, 0, 0.2)",
+        card3: "0 2rem 3rem rgba(71, 7, 234, 0.2)",
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],
