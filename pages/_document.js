@@ -12,7 +12,7 @@ export default function Document() {
         <link rel="icon" type="image/png" href="/logo.png" />
         <link rel="apple-touch-icon" href="/fav.png" />
       </Head>
-      <body className="w-screen h-screen overflow-x-hidden select-none">
+      <body className="w-screen h-screen overflow-x-hidden select-none text-colorDark dark:text-colorDark_DM bg-colorLight dark:bg-colorLight_DM font-sans">
         <Main />
         <NextScript />
       </body> 

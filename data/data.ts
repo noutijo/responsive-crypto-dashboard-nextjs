@@ -1,4 +1,4 @@
-import { menuItemType, investmentType, transactionType, cardType, reportType } from "@/types/types";
+import { menuItemType, investmentType, transactionType, cardType, reportType, paymentType } from "@/types/types";
 
 //menu items
 export const menuItemsData: menuItemType[] = [
@@ -196,6 +196,7 @@ export const cardsData: cardType[] = [
         cvv: "030",
     },
 ]
+
 // reports data
 export const reportsData: reportType[] = [
     {
@@ -225,5 +226,44 @@ export const reportsData: reportType[] = [
     variant: "-15.8",
     variant_color:"text-colorDanger",
     prev_money: 22332,
+    },
+]
+
+// patments data
+export const paymentsData: paymentType[] = [
+    {
+    dot_color: "bg-colorPrimary",
+    title: "Training",
+    money: 50,
+    },
+    {
+    dot_color: "bg-colorSuccess",
+    title: "Internet",
+    money: 30,
+    },
+    {
+    dot_color: "bg-colorPurple",
+    title: "Gas",
+    money: 176,
+    },
+    {
+    dot_color: "bg-colorWarning",
+    title: "Movies",
+    money: 35,
+    },
+    {
+    dot_color: "bg-colorPrimary",
+    title: "Education",
+    money: 1025,
+    },
+    {
+    dot_color: "bg-colorDanger",
+    title: "Electricity",
+    money: 101,
+    },
+    {
+    dot_color: "bg-colorSuccess",
+    title: "Food",
+    money: 426,
     },
 ]

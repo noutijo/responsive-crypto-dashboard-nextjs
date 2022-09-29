@@ -5,9 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
-    body {
-        @apply text-colorDark dark:text-colorDark_DM bg-colorLight dark:bg-colorLight_DM font-sans
-    }
 
     img {
         @apply w-[100%];
@@ -70,89 +67,7 @@
 
 }
 
-
-/* root css variables */
-:root {
-    --color-white: #ffffff;
-    --color-light: #f0eff5;
-    --color-gray-light: #86848c;
-    --color-gray-dark: #56555e;
-    --color-dark: #27282f;
-    --color-primary: rgb(71, 7, 234);
-    --color-success: rgb(34, 202, 75);
-    --color-danger: rgb(255, 67, 54);
-    --color-warning: rgb(234, 181, 7);
-    --color-purple: rgb(160, 99, 245);
-
-    --color-primary-light: rgba(71, 7, 234, 0.2);
-    --color-success-light: rgba(34, 202, 75, 0.2);
-    --color-danger-light: rgba(255, 67, 54, 0.2);
-    --color-purple-light: rgba(160, 99, 245, 0.2);
-
-    --card-padding: 1.6rem;
-    --padding-1: 1rem;
-    --padding-2: 8px;
-
-    --card-border-radius: 1.6rem;
-    --border-radius-1: 1rem;
-    --border-radius-2: 6px;
-}
-
-
 /* ------middle -------- */
-
-/* ------ fast payment ------- */
-.fast-payment {
-    margin-top: 2rem;
-    display: flex;
-    align-self: center;
-    gap: 2rem;
-}
-
-.fast-payment .badges {
-    display: flex;
-    gap: 1rem;
-    align-self: center;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
-
-.fast-payment .badges .badge span {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-}
-
-.fast-payment .badges .badge {
-    padding: 0.5rem var(--card-padding);
-    background: var(--color-white);
-    border-radius: var(--border-radius-2);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    transition: all 300ms ease;
-}
-
-.fast-payment .badges .badge:hover {
-    box-shadow: 0 0 1.5rem var(--color-primary-light);
-    cursor: pointer;
-}
-
-.fast-payment .badges .badge:first-child span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-    font-size: 1.5rem;
-}
-
-.fast-payment .badges .badge div {
-    display: flex;
-    align-self: center;
-    gap: 1rem;
-}
-
-/* -------- chart canvas ------- */
 
 canvas#chart {
     background: var(--color-white);
@@ -167,16 +82,5 @@ canvas#chart {
 
     main canvas {
         margin: 3rem 0 1rem;
-    }
-}
-
-/* --------- media queries for mobiles --------- */
-@media screen and (max-width:600px) {
-
-    main section.middle .fast-payment {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 3rem;
-        gap: 1.4rem;
     }
 }

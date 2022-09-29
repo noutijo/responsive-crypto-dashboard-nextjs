@@ -45,3 +45,9 @@ export type reportType = {
     variant_color: "text-colorSuccess" | "text-colorDanger",
     prev_money: number,
 }
+
+export type paymentType = {
+    dot_color: string,
+    title: string,
+    money: number,
+}
