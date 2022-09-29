@@ -1,4 +1,4 @@
-import { menuItemType, investmentType, transactionType, cardType, reportType, paymentType } from "@/types/types";
+import { menuItemType, investmentType, transactionType, cardType, reportType, paymentType, chartType } from "@/types/types";
 
 //menu items
 export const menuItemsData: menuItemType[] = [
@@ -200,122 +200,121 @@ export const cardsData: cardType[] = [
 // reports data
 export const reportsData: reportType[] = [
     {
-    title: "Incomes",
-    money: 24033,
-    variant: "+11.7",
-    variant_color: "text-colorSuccess",
-    prev_money: 1231,
+        title: "Incomes",
+        money: 24033,
+        variant: "+11.7",
+        variant_color: "text-colorSuccess",
+        prev_money: 1231,
     },
     {
-    title: "Expenses",
-    money: 239,
-    variant: "-7.3",
-    variant_color: "text-colorDanger",
-    prev_money: 89211,
+        title: "Expenses",
+        money: 239,
+        variant: "-7.3",
+        variant_color: "text-colorDanger",
+        prev_money: 89211,
     },
     {
-    title: "Cashback",
-    money: 9034,
-    variant: "+4.2",
-    variant_color: "text-colorSuccess",
-    prev_money: 8732,
+        title: "Cashback",
+        money: 9034,
+        variant: "+4.2",
+        variant_color: "text-colorSuccess",
+        prev_money: 8732,
     },
     {
-    title: "Turnover",
-    money: 1292,
-    variant: "-15.8",
-    variant_color:"text-colorDanger",
-    prev_money: 22332,
+        title: "Turnover",
+        money: 1292,
+        variant: "-15.8",
+        variant_color: "text-colorDanger",
+        prev_money: 22332,
     },
 ]
 
 // patments data
 export const paymentsData: paymentType[] = [
     {
-    dot_color: "bg-colorPrimary",
-    title: "Training",
-    money: 50,
+        dot_color: "bg-colorPrimary",
+        title: "Training",
+        money: 50,
     },
     {
-    dot_color: "bg-colorSuccess",
-    title: "Internet",
-    money: 30,
+        dot_color: "bg-colorSuccess",
+        title: "Internet",
+        money: 30,
     },
     {
-    dot_color: "bg-colorPurple",
-    title: "Gas",
-    money: 176,
+        dot_color: "bg-colorPurple",
+        title: "Gas",
+        money: 176,
     },
     {
-    dot_color: "bg-colorWarning",
-    title: "Movies",
-    money: 35,
+        dot_color: "bg-colorWarning",
+        title: "Movies",
+        money: 35,
     },
     {
-    dot_color: "bg-colorPrimary",
-    title: "Education",
-    money: 1025,
+        dot_color: "bg-colorPrimary",
+        title: "Education",
+        money: 1025,
     },
     {
-    dot_color: "bg-colorDanger",
-    title: "Electricity",
-    money: 101,
+        dot_color: "bg-colorDanger",
+        title: "Electricity",
+        money: 101,
     },
     {
-    dot_color: "bg-colorSuccess",
-    title: "Food",
-    money: 426,
+        dot_color: "bg-colorSuccess",
+        title: "Food",
+        money: 426,
     },
 ]
 
 // chart data
-export const chartData={
-      type: "line",
-      data: {
+
+export const chartData: chartType = {
+    type: "line",
+    data: {
         labels: [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
         ],
-        datasets: [
-          {
+        datasets: [{
             label: "BTC",
             data: [
-              29374, 33537, 49631, 59095, 57828, 36684, 33572, 39974, 48847,
-              48116, 61004,
+                29374, 33537, 49631, 59095, 57828, 36684, 33572, 39974, 48847,
+                48116, 61004,
             ],
             borderColor: "#fa7986",
             borderWidth: 1,
-          },
-          {
+        },
+        {
             label: "ETH",
             data: [
-              31500, 41000, 88800, 26000, 46000, 32698, 5000, 3000, 18656,
-              24832, 36844,
+                31500, 41000, 88800, 26000, 46000, 32698, 5000, 3000, 18656,
+                24832, 36844,
             ],
             borderColor: "#5b5cf1",
             borderWidth: 1,
-          },
-          {
+        },
+        {
             label: "EURO",
             data: [
-              3100, 4100, 8880, 36000, 56000, 62969, 500, 300, 1866,
-              2832, 26004,
+                3100, 4100, 8880, 36000, 56000, 62969, 500, 300, 1866,
+                2832, 26004,
             ],
             borderColor: "#259d3f",
             borderWidth: 1,
-          },
-        ],
-      },
-      options: {
+        },],
+    },
+    options: {
         responsive: true,
-      },
-    }
+    },
+}

@@ -16,10 +16,7 @@ export default function Document() {
       <body className="w-screen h-screen overflow-x-hidden select-none text-colorDark dark:text-colorDark_DM bg-colorLight dark:bg-colorLight_DM font-sans">
         <Main />
         <NextScript />
-        <Script
-          src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
-          strategy="beforeInteractive"
-        />
+    
       </body>
     </Html>
   );

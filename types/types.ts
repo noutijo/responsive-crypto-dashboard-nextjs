@@ -51,3 +51,19 @@ export type paymentType = {
     title: string,
     money: number,
 }
+
+export type chartType = {
+    type: string;
+    data: {
+        labels: string[];
+        datasets: {
+            label: string;
+            data: number[];
+            borderColor: string;
+            borderWidth: number;
+        }[];
+    };
+    options: {
+        responsive: boolean;
+    };
+}

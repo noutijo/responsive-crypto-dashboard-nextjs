@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "bootstrap-icons": "^1.9.1",
+    "chart.js": "^3.9.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
+    "@types/chart.js": "^2.9.37",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
