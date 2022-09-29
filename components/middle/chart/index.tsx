@@ -22,7 +22,7 @@ Chart.register(
 )
 
 export default function GrapChart() {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
   useEffect(() => {
   const ctx = canvasRef?.current?.getContext(
