@@ -9,8 +9,8 @@ export default function Document() {
             __html: `try { if ((localStorage.theme) && (localStorage.theme === 'light')) {document.documentElement.classList.add('light')} else {document.documentElement.classList.add('dark')}} catch (__) {}`,
           }}></script>
         <meta charSet="utf-8" />
-        <link rel="icon" type="image/png" href="/images/logo.png" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link rel="apple-touch-icon" href="/images/favicon.png" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
