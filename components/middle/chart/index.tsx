@@ -30,8 +30,13 @@ export default function GrapChart() {
      ) as CanvasRenderingContext2D;
 
     // new Chart instance
-    new Chart(ctx, chartData as any)
+    const myChart = new Chart(ctx, chartData as any)
+     // when component unmounts
+  return () => {
+      myChart.destroy()
+    }
   })
+  
   return (
     <>
       <canvas
