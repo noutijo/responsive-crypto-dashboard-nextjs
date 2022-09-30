@@ -32,7 +32,9 @@ export default function GrapChart() {
     // new Chart instance
     const myChart = new Chart(ctx, chartData as any)
      // when component unmounts
+  return () => {
       myChart.destroy()
+    }
   })
   
   return (
