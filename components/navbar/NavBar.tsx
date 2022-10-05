@@ -2,6 +2,7 @@ import { useDrawer } from "@hooks/AsideBarHook"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import PopoverMenu from "./PopoverMenu"
 
 export default function NavBar() {
   const [currentTheme, setCurrentTheme] = useState<string>("")
@@ -47,7 +48,7 @@ export default function NavBar() {
             alt="logo"
           />
         </Link>
-  {/** search bar */}
+        {/** search bar */}
         <div className="bg-colorLight dark:bg-colorLight_DM py-2 px-[1.6rem] rounded-md w-[32vw] items-center gap-3 text-colorGrayLight sm:hidden lg:flex">
           <i className={`bi bi-search text-sm flex items-center`}></i>
           <input
@@ -64,14 +65,14 @@ export default function NavBar() {
                 currentTheme === "light" ? "active-theme" : ""
               }`}
               onClick={() => {
-                setTheme("light")
+                setTheme("light");
               }}></i>
             <i
               className={`bi bi-moon-fill text-sm w-1/2 h-full flex items-center justify-center ${
                 currentTheme === "dark" ? "active-theme" : ""
               }`}
               onClick={() => {
-                setTheme("dark")
+                setTheme("dark");
               }}></i>
           </div>
           {/** profile image */}
@@ -84,10 +85,9 @@ export default function NavBar() {
                 alt="Oreol profile"
               />
             </div>
-            <h5>Oreol Noumodong</h5>
-            <div className="">
-              <i
-                className={`bi bi-chevron-down text-sm w-1/2 h-full flex items-center justify-center`}></i>
+            <div>
+            {/** Popover Menu */}
+            <PopoverMenu />
             </div>
           </div>
           {/** button to display aside bar menu */}
@@ -98,5 +98,5 @@ export default function NavBar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
