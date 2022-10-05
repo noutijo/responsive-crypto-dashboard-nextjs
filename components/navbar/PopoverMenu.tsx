@@ -3,7 +3,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid"
 import Link from "next/link"
 import { Fragment } from "react"
 
-const solutions = [
+const items = [
   {
     name: 'Dashboard',
     href: '/',
@@ -52,7 +52,7 @@ export default function PopoverMenu() {
               <Popover.Panel className="absolute right-[10px] z-10 mt-3 px-4 sm:px-0">
                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black dark:ring-colorGrayLight/25 ring-opacity-5">
                   <div className="relative flex flex-col gap-8 bg-colorWhite dark:bg-colorWhite_DM p-7">
-                    {solutions.map((item) => (
+                    {items.map((item) => (
                       <Link key={item.name} href={item.href}>
                         <div className="-m-3 flex items-center rounded-lg cursor-pointer py-3 px-4 transition duration-150 ease-in-out hover:bg-colorLight dark:hover:bg-colorLight_DM outline-none">
                           <div className="flex items-center justify-center text-colorGrayLight sm:h-6 sm:w-6">
