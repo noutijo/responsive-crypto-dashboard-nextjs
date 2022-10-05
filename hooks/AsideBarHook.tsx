@@ -10,12 +10,12 @@ const asideContext = React.createContext<asideType>({
   setMenuStatus: () => {},
 })
 
-// update state and allow to hanfle displaying aside menu bar
+// update state and allow to handle displaying aside menu bar
 export const useDrawer = () => {
   return React.useContext(asideContext)
 }
 
-export const AsideBarPrivider = ({ children }: { children: React.ReactNode }) => {
+export const AsideBarProvider = ({ children }: { children: React.ReactNode }) => {
   const [isopen, setMenuStatus] = useState<boolean>(false)
 
   return (

@@ -269,7 +269,6 @@ export const paymentsData: paymentType[] = [
 ]
 
 // chart data
-
 export const chartData: chartType = {
     type: "line",
     data: {

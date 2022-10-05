@@ -7,7 +7,7 @@ import type { NextPage } from "next"
 import NavBarLayout from "@components/layouts/NavBarLayout"
 import PrincipalLayout from "@components/layouts/PrincipalLayout"
 import DefaultLayout from "@components/layouts/DefaultLayout"
-import { AsideBarPrivider } from "@hooks/AsideBarHook"
+import { AsideBarProvider } from "@hooks/AsideBarHook"
 
 //define new Layout type
 export type NextPageWithLayout = NextPage & {
@@ -21,16 +21,16 @@ type AppPropsWithLayout = AppProps & {
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   //get nested Layout
-  const BodyLayout = Component.Layout || DefaultLayout
+  const NestedLayout = Component.Layout || DefaultLayout
 
   return (
-    <AsideBarPrivider>
+    <AsideBarProvider>
       <NavBarLayout>
-        <BodyLayout>
+        <NestedLayout>
           <Component {...pageProps} />
-        </BodyLayout>
+        </NestedLayout>
       </NavBarLayout>
-    </AsideBarPrivider>
+    </AsideBarProvider>
   )
 }
 
