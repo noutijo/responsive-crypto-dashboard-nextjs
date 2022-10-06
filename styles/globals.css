@@ -4,6 +4,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+::-webkit-scrollbar {
+@apply w-[8px] 
+}
+
+::-webkit-scrollbar-track {
+ @apply bg-transparent
+}
+
+::-webkit-scrollbar-thumb {
+ @apply bg-colorGrayLight dark:bg-colorWhite_DM rounded-full;
+}
+
 @layer base {
     h1 {
         @apply text-[2rem];
