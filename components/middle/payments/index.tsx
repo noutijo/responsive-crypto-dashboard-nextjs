@@ -12,7 +12,7 @@ export default function Payments() {
             <i className="bi bi-plus"></i>
           </div>
 
-          {/** get and display all ayments */}
+          {/** get and display all payments */}
           {paymentsData.map((payment, __) => {
           return <PaymentItem key={__} data={payment} />
         })}
