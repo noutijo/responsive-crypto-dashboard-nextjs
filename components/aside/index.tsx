@@ -15,7 +15,7 @@ export default function Aside() {
   return (
     <>
       <aside
-        className={`lg:flex bg-colorLight dark:bg-colorLight_DM flex-col lg:left-[0%] left-[-100%] lg:z-[1] lg:relative lg:h-[98vh] lg:w-[inherit] pb-6 z-[5] w-[22rem] h-screen fixed top-0 ${
+        className={`lg:flex bg-colorLight dark:bg-colorLight_DM flex-col lg:left-[0%] left-[-100%] lg:z-[1] lg:h-[98vh] lg:w-[inherit] pb-6 z-[5] w-[22rem] h-screen fixed top-0 lg:sticky lg:top-[4.5rem] ${
           drawer.isopen ? "left-[0%]" : ""
         } overflow-y-auto lg:sticky lg:top-0 transition-all duration-300 ease-out`}>
 
