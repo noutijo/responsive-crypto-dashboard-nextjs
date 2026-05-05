@@ -12,10 +12,10 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-`Overview -darkMode`
+`Overview - darkMode`
 
 ![](/public/images/prev_dark_mode.png)
 
-`Overview -lightMode`
+`Overview - lightMode`
 
 ![](/public/images/prev_light_mode.png)
